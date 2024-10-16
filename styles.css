@@ -22,6 +22,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);*/
         4.3 Case Studies - section 2
         4.4 Services - section 3
         4.5 Contact Us - section 4
+        4.6 footer
     5. Media Queries
 ////////////////////////*/
 
@@ -277,10 +278,20 @@ input::placeholder, textarea::placeholder {
 
 .submitButton {
     margin: 1rem 0;
+    width: 9rem;
     align-self: center;
 
 }
 
+/* --------------- 4.6 footer ------------------- */
 
+footer {
+    background-color: #000;
+    height: 2rem;
+    color: #FFF;
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 0.6rem 0;
+}
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
