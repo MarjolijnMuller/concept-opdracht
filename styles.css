@@ -64,11 +64,10 @@ p, a {
 div {
     width: 40rem;
     margin: 3rem auto;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+
     gap: 1rem;
 }
 
@@ -81,6 +80,7 @@ button {
     border: none;
     box-shadow: 0.2rem 0.2rem 0.8rem hsl(241 78 40);
 }
+
 
 /* --------------- 3.2 Other --------------------------- */
 
@@ -112,6 +112,10 @@ nav {
     padding-right: 1rem;
 }
 
+.introBlock{
+    text-align: center;
+}
+
 li {
     list-style: none;
 }
@@ -125,9 +129,14 @@ a {
     position: relative;
     top: 1rem;
     margin: 0;
+    align-items: center;
 }
 
 /* --------------- 4.2 Introduction - section 1 ------------------- */
+.introduction {
+    text-align: center;
+}
+
 .introduction h2 {
     color: #4845E4;
 }
@@ -137,6 +146,58 @@ a {
     font-size: 0.75rem;
 }
 /* --------------- 4.3 Case Studies - section 2 ------------------- */
+.projects {
+    background-color: #F3F6F9;
+    padding: 1rem 1.5rem;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 3rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+
+.project:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.wrapperProjectPicture {
+    flex-basis: 22rem;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.projectText {
+    flex-basis: 18rem;
+    text-align: left;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.projectPicture {
+    width: 100%;
+    box-shadow: 0.2rem 0.2rem 0.8rem hsl(210, 33%, 85%);
+}
+
+.squiggle {
+    width: 2rem;
+}
+
+.linkProject {
+    color: #4845E4;
+    text-transform: uppercase;
+}
 
 /* --------------- 4.4 Services - section 3 ------------------- */
 
