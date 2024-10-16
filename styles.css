@@ -47,7 +47,7 @@ html {
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: "Merriweather", serif;
     font-weight: 400;
 }
@@ -200,6 +200,33 @@ a {
 }
 
 /* --------------- 4.4 Services - section 3 ------------------- */
+.services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 48rem;
+}
+
+.service {
+    flex-basis: 15rem;
+    padding: 2rem 1.5rem;
+    border: 1px solid #5722CD;
+}
+
+.icon {
+    width: 3rem;
+}
+
+.service h4{
+    color: #5722CD;
+    padding: 0.5rem 0;
+}
+
+.service p {
+    color: #7A7A7A;
+    font-size: 0.75rem;
+
+}
 
 /* --------------- 4.5 Contact Us - section 4 ------------------- */
 
