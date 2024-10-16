@@ -18,8 +18,10 @@ Grijs #7A7A7A (voor de service-tegel tekst);*/
         3.2 Other
     4. Areas
         4.1 Header
-        4.2 Introduction
-        etc.
+        4.2 Introduction - section 1
+        4.3 Case Studies - section 2
+        4.4 Services - section 3
+        4.5 Contact Us - section 4
     5. Media Queries
 ////////////////////////*/
 
@@ -50,24 +52,56 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
-p {
+p, a {
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
 
+div {
+    width: 40rem;
+    margin: 3rem auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    background-color: #ED4385;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0.2rem 0.2rem 0.8rem hsl(241 78 40);
+}
+
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+header {
+    background-color: #4845E4;
+    background: linear-gradient(133deg, rgba(72,69,228,1) 20%, rgba(87,34,205,1) 70%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: 25rem;
+}
 nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .menu {
@@ -81,6 +115,32 @@ nav {
 li {
     list-style: none;
 }
-/* --------------- 4.2 Introduction ------------------- */
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.squiggleHeader {
+    position: relative;
+    top: 1rem;
+    margin: 0;
+}
+
+/* --------------- 4.2 Introduction - section 1 ------------------- */
+.introduction h2 {
+    color: #4845E4;
+}
+
+.introduction a {
+    color: #4845E4;
+    font-size: 0.75rem;
+}
+/* --------------- 4.3 Case Studies - section 2 ------------------- */
+
+/* --------------- 4.4 Services - section 3 ------------------- */
+
+/* --------------- 4.5 Contact Us - section 4 ------------------- */
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
